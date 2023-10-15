@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<?import java.util.ResourceBundle?>
+<?import java.io.File?>
+<TitledPane alignment="CENTER" animated="false" collapsible="false" text="Team info" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <VBox prefHeight="450.0" prefWidth="300.0">
+         <children>
+            <GridPane prefWidth="225.0">
+               <columnConstraints>
+                  <ColumnConstraints prefWidth="50.0" />
+                  <ColumnConstraints prefWidth="50.0" />
+                  <ColumnConstraints prefWidth="50.0" />
+                  <ColumnConstraints prefWidth="50.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints prefHeight="30.0"/>
+                  <RowConstraints prefHeight="30.0"/>
+                  <RowConstraints prefHeight="30.0"/>
+                  <RowConstraints prefHeight="30.0"/>
+               </rowConstraints>
+               <children>
+                  <Text text="Team name" GridPane.rowIndex="1"/>
+                  <Text text="Team leader" GridPane.rowIndex="2"/>
+                  <Text text="Team leader email" GridPane.rowIndex="3"/>
+                  <Text text="Team members" GridPane.rowIndex="4"/>
+                  <Text fx:id="name" GridPane.columnIndex="8" GridPane.rowIndex ="1"/>
+                  <Text fx:id="leader" GridPane.columnIndex="8" GridPane.rowIndex ="2"/>
+                  <Text fx:id="email" GridPane.columnIndex="8" GridPane.rowIndex ="3"/>
+                  <Text fx:id="members" GridPane.columnIndex="8" GridPane.rowIndex ="4"/>
+
+               </children>
+            </GridPane>
+            <BorderPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+               <right>
+                  <ImageView fx:id="birthdayCakeImage" fitWidth="200" fitHeight="200">
+                     <image>
+                        <Image url="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/3170249/birthday-cake-clipart-md.png"/>
+                     </image>
+                  </ImageView>
+               </right>
+            </BorderPane>
+            <Separator orientation="HORIZONTAL"/>
+         </children>
+      </VBox>
+   </content>
+
+
+</TitledPane>
