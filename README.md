@@ -73,8 +73,3 @@ se-possystem/
 ```bash
 ./gradlew test
 ```
-
-## Author
-
-Jan Tomson  
-University of Tartu, Software Engineering Course, 202
